@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+      <pattern>^ HELLO ^</pattern>
+      <template>
+        <random>
+            <li>hi</li>
+            <li>hello </li>
+            <li>thank God, someone is talking with me!</li>
+            <li>hi there</li>
+        </random>
+      </template>
+  </category>
+
+  <category>
+      <pattern>^ HI ^</pattern>
+      <template><srai>hello</srai></template>
+  </category>
+  <category>
+      <pattern>^ HEY ^</pattern>
+      <template><srai>hello</srai></template>
+  </category>
+</aiml>

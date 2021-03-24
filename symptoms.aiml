@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    <category>
+      <pattern>^ DISEASE ^</pattern>
+      <template>please tell me the symptoms first.</template>
+  </category>
+  <category>
+      <pattern>^ DISEASES ^</pattern>
+      <template><srai>disease</srai></template>
+  </category>
+  <category>
+      <pattern>^ SYMPTOMS ^</pattern>
+      <template>yes <set name="topic">symptoms</set></template>
+  </category>
+  
+  <topic name="symptoms">
+      
+  
+
+	<category>
+      <pattern>^ IRRITATION ^</pattern>
+      <template><srai>thirst</srai></template>
+  </category>
+ 
+  <category>
+      <pattern>^ ITCHING *</pattern>
+      <template>
+          <think><set name="diseasevar"><star index="2"/></set></think>
+          <condition name="diseasevar" value="vomiting">
+              it is perfectly kidney disease
+          </condition>
+          <condition name="diseasevar" value="feeling hungry">
+              may be kidney disease
+          </condition>
+      </template>
+  </category>
+  
+ 
+  <category>
+      <pattern>^ COUGH ^ SHORTNESS OF BREATH ^ PHLEGM PRODUCTION ^ FREQUENT RESPIRATORY INFECTIONS ^ CHEST PAIN ^ CYAMOSIS ^</pattern>
+      <template>if all these are symptoms then you have chronic lower respiratory disease</template>
+  </category>
+  <category>
+      <pattern>^ MEMORY LOSS ^ POOR JUDGMENT ^ CHANGES IN MOOD ^</pattern>
+      <template>Alzheimer's disease</template>
+  </category>
+  <category>
+      <pattern>^ MEMORY LOSS ^</pattern>
+      <template>Can be Alzheimer's disease</template>
+  </category>
+  <category>
+      <pattern>^ POOR JUDGMENT ^</pattern>
+      <template>Can be Alzheimer's disease</template>
+  </category>
+    <category>
+      <pattern> ^ CHANGES IN MOOD ^</pattern>
+      <template>Can be Alzheimer's disease</template>
+  </category>
+  <category>
+      <pattern>^ THIRST ^ FREQUENT URINATION ^ EXTREME HUNGER ^ UNEXPLAINED WEIGHT LOSS ^ FATIGUE ^ IRRITABLITY ^</pattern>
+      <template>Diabetes</template>
+  </category>
+  <category>
+      <pattern>^ THIRST ^ </pattern>
+      <template>Can be Diabetes</template>
+  </category>
+  <category>
+      <pattern> ^ URINATION ^</pattern>
+      <template>What about extreme hunger</template>
+  </category>
+    <category>
+      <pattern>^ EXTREME HUNGER ^</pattern>
+      <template><srai>thirst</srai></template>
+  </category>
+  <category>
+      <pattern>^ YES ^</pattern>
+      <that>What about extreme hunger</that>
+      <template>it is diabetes...</template>
+  </category>
+  <category>
+      <pattern>^ NO ^ </pattern>
+      <template><srai>thirst</srai></template>
+  </category>
+  
+  <category>
+      <pattern>^ UNEXPLAINED WEIGHT LOSS ^</pattern>
+      <template><srai>thirst</srai></template>
+  </category>
+      <category>
+      <pattern>^ FATIGUE ^</pattern>
+      <template><srai>thirst</srai></template>
+  </category>
+     <category>
+      <pattern>^ IRRITABLITY ^</pattern>
+      <template><srai>thirst</srai></template>
+  </category>
+  <category>
+      <pattern>^ FEVER ^</pattern>
+      <template>Can be influenza/pneumonia</template>
+  </category>
+  <category>
+      <pattern>^ CHILLS ^</pattern>
+      <template><srai>fever</srai></template>
+  </category>
+    <category>
+      <pattern>^ HEADACHE ^</pattern>
+      <template><srai>fever</srai></template>
+  </category>
+  <category>
+      <pattern>^ WEAKNESS ^</pattern>
+      <template><srai>fever</srai></template>
+  </category>
+   <category>
+      <pattern>^ SORE THROAT ^</pattern>
+      <template><srai>fever</srai></template>
+  </category>
+  <category>
+      <pattern>^ NASAL CONGESTION ^</pattern>
+      <template><srai>fever</srai></template>
+  </category>
+  
+    <category>
+      <pattern>^ TIREDNESS ^</pattern>
+      <template><srai>fever</srai></template>
+  </category>
+  <category>
+      <pattern>^ POOR APPETITE ^ ABDOMINAL PAIN ^ PERITONITIS ^ HEADACHES ^ GENERALIZED ACHES ^ PAINS ^ WEAKNESS ^ HIGH FEVER ^ LETHARGY ^ COUGH ^</pattern>
+      <template>perfectly, it is typhoid</template>
+  </category>
+  <category>
+      <pattern>^ POOR APPETITE ^</pattern>
+      <template>can be typhoid</template>
+  </category>
+   <category>
+      <pattern>^ ABDOMINAL PAIN ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+  <category>
+      <pattern>^ PERITONITIS ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+  <category>
+      <pattern>^ HEADACHES ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+  <category>
+      <pattern>^  GENERALIZED ACHES ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+  <category>
+      <pattern> ^ WEAKNESS ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+   <category>
+      <pattern>^ PAINS ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+  <category>
+      <pattern>^ HIGH FEVER ^ </pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+   <category>
+      <pattern>^ LETHARGY ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+   <category>
+      <pattern>^ COUGH ^</pattern>
+      <template><srai>poor appetite</srai></template>
+  </category>
+  <category>
+      <pattern> ^ SHAKING CHILLS ^ PROFUSE ^  SWEATING ^ HEADACHE ^ NAUSEA ^ VOMITING ^ ABDOMINAL PAIN ^ DIARRHEA ^</pattern>
+      <template>perfectly malaria</template>
+  </category>
+  <category>
+      <pattern> ^ SHAKING CHILLS ^</pattern>
+      <template>can be malaria</template>
+  </category>
+
+  <category>
+      <pattern>^ PROFUSE ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern>^ SWEATING ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern>^ HEADACHE ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern>^ NAUSEA ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern> ^ VOMITING ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern>^ ABDOMINAL PAIN ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern>^ DIARRHEA ^</pattern>
+      <template><srai>shaking chills</srai></template>
+  </category>
+  <category>
+      <pattern>^ PAIN ^ BEHIND ^ EYES ^ SEVERE ^ JOINT ^ MUSCLE ^ PAIN ^ </pattern>
+      <template>perfectly these are symptoms of dengue...</template>
+  </category>
+  <category>
+      <pattern>^ PAIN ^ BEHIND ^ EYES ^</pattern>
+      <template>can be dengue</template>
+  </category>
+  <category>
+      <pattern>^ SEVERE ^ JOINT ^</pattern>
+      <template>can be dengue</template>
+  </category>
+  <category>
+      <pattern>^ MUSCLE ^ PAIN ^</pattern>
+      <template>can be dengue</template>
+  </category>
+  <category>
+      <pattern>^ SKIN ^ RASH ^</pattern>
+      <template>can be dengue</template>
+  </category>
+  <category>
+      <pattern>^ RASH ^</pattern>
+      <template>can be dengue</template>
+  </category>
+  <category>
+      <pattern>^ SKIN ^</pattern>
+      <template>can be dengue</template>
+  </category>
+  </topic>
+</aiml>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+      <pattern>^ YOUR ^ NAME ^</pattern>
+      <template>
+          <random>
+              <li>well my name is lingu</li>
+              <li>People call me Lingu</li>
+              <li>My name is Lingu!</li>
+          </random>
+      </template>
+  </category>
+   <category>
+      <pattern>^ YOU ^ LINGU ^</pattern>
+      <template><srai>YOUR NAME</srai></template>
+  </category>
+  <category>
+      <pattern>^ NOT ^ YOUR ^ NAME ^</pattern>
+      <template>
+          <random>
+              <li>Ok as you wish!</li>
+              <li>Okay!</li>
+              <li>Its okay...</li>
+          </random></template>
+  </category>
+  <category>
+      <pattern>^ YOUR WORK ^</pattern>
+      <template>
+          <random>
+              <li> I am here for telling you about the medical treatments on the basis of symptoms</li>
+              <li> I can tell you diseases only... nothing less nothing more!</li>
+          </random>
+       </template>   
+  </category>
+ 
+ <category>
+     <pattern>^ WHAT ^ YOU ^ DO ^</pattern>
+     <template><srai>YOUR WORK</srai></template>
+ </category>
+ 
+<category>
+    <pattern>^ TELL ^ YOUR ^ NAME ^</pattern>
+    <template><srai>YOUR NAME</srai></template>
+</category>
+
+<category>
+    <pattern>^ WHY ^ NAME ^</pattern>
+    <template>it is what it is...!</template>
+</category>
+ <category>
+     <pattern>^ REALLY ^</pattern>
+     <template>fine...</template>
+ </category>
+ <category>
+     <pattern>^ YOU ^ SURE ^</pattern>
+     <template><srai>really</srai></template>
+ </category>
+ <category>
+     <pattern>WHAT IS *</pattern>
+     <template><srai><star/></srai></template>
+ </category>
+ 
+ <category>
+     <pattern>^ WHAT ^ UP ^</pattern>
+     <template>
+         <random>
+             <li>nothing much... please tell your symptoms...</li>
+             <li>don't ask me... </li>
+             <li>I am very busy...</li>
+         </random>
+        </template>
+ </category>
+ <category>
+     <pattern>^ YOU ^ THERE ^</pattern>
+     <template><srai>really</srai></template>
+ </category>
+  <category>
+      <pattern>^ YOU ^ HERE ^</pattern>
+      <template><srai>really</srai></template>
+  </category>
+  <category>
+      <pattern>^ DOING ^</pattern>
+      <template>nothing well</template>
+  </category>
+  <category>
+      <pattern>^ WHY ^ ARE ^ HERE ^</pattern>
+      <template><srai>YOUR WORK</srai></template>
+  </category>
+    <category>
+      <pattern>^ WHY ^ CREATED ^</pattern>
+      <template><srai>YOUR WORK</srai></template>
+  </category>
+  <category>
+      <pattern>^ WHY ^ DO ^</pattern>
+      <template>I am here just because I was created like this...</template>
+  </category>
+  
+  <category>
+      <pattern>^ YOUR ^ USAGE ^</pattern>
+      <template><srai>YOUR WORK</srai></template>
+  </category>
+  <category>
+      <pattern>^ MY ^ NAME ^ IS *</pattern>
+      <template>Hello <think><set name="namevar"><star index="4"/></set></think>.</template>
+  </category>
+  
+  <category>
+      <pattern>^ MY ^ NAME ^</pattern>
+      <template>Well your name is <get name="namevar" /></template>
+  </category>
+  <category>
+      <pattern>^ BYE ^</pattern>
+      <template>Nice to talk to you <get name="namevar"/></template>
+  </category>
+</aiml>

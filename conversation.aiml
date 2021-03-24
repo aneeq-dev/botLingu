@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+     <pattern>^ REALLY ^</pattern>
+     <template>yeah...</template>
+ </category>
+ <category>
+     <pattern>^ OKAY ^</pattern>
+     <template><srai>really</srai></template>
+ </category>
+ <category>
+      <pattern>^ DISEASE ^</pattern>
+      <template>please tell me the symptoms first.</template>
+  </category>
+  <category>
+      <pattern>^ SHUT ^ UP ^</pattern>
+      <template>okay...</template>
+  </category>
+  <category>
+      <pattern>^ SURE ^</pattern>
+      <template>yeah...</template>
+  </category>
+  <category>
+      <pattern>^ YOU ^</pattern>
+      <template>really...!</template>
+  </category>
+  <category>
+      <pattern>^ HAPPENING ^</pattern>
+      <template>nothing much...</template>
+  </category>
+  <category>
+      <pattern>YEAH</pattern>
+      <template>ok nice...</template>
+  </category>
+  
+  <category>
+      <pattern>^ MY HOBBY IS *</pattern>
+      <template><set name="hobbyvar"><star index="2"/></set> nice one! I will remember it</template>
+  </category>
+  <category>
+      <pattern>^ MY ^ HOBBY ^</pattern>
+      <template>Your hobby is <get name="hobbyvar"/>... Very interesting one!</template>
+  </category>
+  <category>
+      <pattern>^ YOUR ^ HOBBY ^</pattern>
+      <template>Well my hobby is my work serving you...</template>
+  </category>
+  
+  <category>
+      <pattern>^ WHY ^</pattern>
+      <template>please!</template>
+  </category>
+  
+  <category>
+      <pattern>^ TELL ^ DISEASES ^</pattern>
+      <template>sure...</template>
+  </category>
+  <category>
+      <pattern>^ THANK YOU ^ </pattern>
+      <template>its okay...</template>
+  </category>
+  <category>
+      <pattern>^ OK ^</pattern>
+      <template>:)</template>
+  </category>
+  <category>
+      <pattern>^ HOW ^</pattern>
+      <template>dont know!</template>
+  </category>  
+  
+</aiml>

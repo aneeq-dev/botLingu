@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+ 
+   <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li> Your question has no answer </li>
+            <li> Don't distract me... I am here just for telling you diseases </li>
+        </random>
+    </template>
+  </category>
+  
+</aiml>
